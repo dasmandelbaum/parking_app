@@ -110,7 +110,7 @@ public class ParkingActivity extends AppCompatActivity
 
     @Override
     public void onConnectionSuspended(int i) {
-
+        Log.i(LOG_TAG,"onConnectionFailed:"+ i);
     }
 
     @Override
