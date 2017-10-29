@@ -107,9 +107,8 @@ public class ParkingActivity extends AppCompatActivity
                 Manifest.permission.ACCESS_FINE_LOCATION)
                 == PackageManager.PERMISSION_GRANTED)
         {
-            Log.i(LOG_TAG,"in if statement location: " + LocationServices.getGeofencingClient(this).toString());
-            LocationServices.getFusedLocationProviderClient(this).getLastLocation();//.requestLocationUpdates(mLocationRequest, this.createPendingResult(1, this.getIntent(), 0));
-
+            Log.i(LOG_TAG,"in if statement location: " + LocationServices.getFusedLocationProviderClient(this).requestLocationUpdates(mLocationRequest, this.createPendingResult(1, this.getIntent(), 0)).toString());
+            LocationServices.getFusedLocationProviderClient(this).requestLocationUpdates(mLocationRequest, finish(),mGoogleApiClient.getLooper() ); //this.createPendingResult(1, this.getIntent(), 0));//LocationServices.getFusedLocationProviderClient(this).requestLocationUpdates();//.getLastLocation();//.requestLocationUpdates(mLocationRequest, this.createPendingResult(1, this.getIntent(), 0));
         }
     }
 
