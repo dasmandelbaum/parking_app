@@ -29,6 +29,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 import android.*;
 import android.Manifest;
+import android.app.Dialog;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Bundle;
@@ -217,7 +218,9 @@ public class MarkerAdd extends AppCompatActivity
         // Any showing info window closes when the map is clicked.
         // Clear the currently selected marker.
         mSelectedMarker = null;
-        mMap.addMarker(new MarkerOptions().position(point).title("new marker").snippet("sample data"));
+        /**final Dialog dialog = new Dialog();
+        dialog.setContentView(R.layout.dialog_box);**/
+        mMap.addMarker(new MarkerOptions().position(point).title("Open spot").snippet("Spot size: \nExtra info: "));
     }
 
     @Override
