@@ -38,8 +38,8 @@ public class ParkingActivity extends FragmentActivity implements OnMapReadyCallb
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        // Add a marker in Sydney and move the camera
-        LatLng heights = new LatLng(40, -73);
+        // Add a marker in Heights and move the camera
+        LatLng heights = new LatLng(40.850806, -73.929348);
         mMap.addMarker(new MarkerOptions().position(heights).title("Marker in Heights"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(heights));
     }
