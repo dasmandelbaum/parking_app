@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="custom_info_window_options" type="id">info</item>
+    <item name="flat" type="id">flat</item>
+    <item name="rotationSeekBar" type="id">rotaino seek</item>
+    <item name="top_text" type="id">top text</item>
+    <item name="snippet" type="id">snippet</item>
+    <item name="badge" type="id">badge</item>
+    <item name="custom_info_contents" type="id">custom info</item>
+    <item name="custom_info_window" type="id">custon info</item>
+</resources>
