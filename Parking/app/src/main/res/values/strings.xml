@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Parking</string>
     <string name="title_activity_parking">Map</string>
+    <string name="location_permission_denied">Permission denied</string>
+    <string name="permission_required_toast">permission required toast</string>
+    <string name="permission_rationale_location">permission rationale location</string>
 </resources>
